@@ -15,6 +15,7 @@
     color: white;
 }
 .nav-items {
+    background-color: black;
     float: right;
     margin-left: 35%;
     font-size: 18px;
