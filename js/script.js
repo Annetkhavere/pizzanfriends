@@ -52,25 +52,44 @@ $(document).ready(function() {
             var toppingsCost = checkboxes * 130;
         }
         $("input[type='checkbox']:not(:checked)").prop({ //disable unchecked boxes
-            disabled: true
-        });
-        $('#placeorder').prop('disabled', true); //deactivate button after order is made to prevent client from changing order once the order is placed
-        var price = parseInt((pizzaSizeCost + crustCost + toppingsCost));
-        var totalPrice = parseInt(price * number);
-        alert(totalPrice);
+          disabled: true
+      });
+      $('#placeorder').prop('disabled', true); //deactivate button after order is made to prevent client from changing order once the order is placed
+      $("#yourorder").show();
+      var price = (sizeCost + crustCost + toppingsCost);
+      var totalPrice = parseInt(price * number);
+      $(".salutation").text("Hey" + " " + name + ". Here's your order:");
+      $(".pizza-size").append('<tr><td id="pizza-size">' + size);
+      $(".number").append('<tr><td id="number">' + number);
+      $(".pizza-crust").append('<tr><td id="pizza-crust">' + crust);
+      $(".pizza-flavor").append('<tr><td id="pizza-flavor">' + flavor);
+      $(".pizzaTotal1").append('<tr><td id="pizzaTotal1">' + totalPrice);
+      arrayTotal.push(totalPrice); //create an array for all total prices
+      if (toppings == "") {
+          $(".toppings").append('<tr><td id="pizza-toppings">' + "-");
+      }
+      if (toppings != "") {
+          $(".toppings").append('<tr><td id="pizza-toppings">' + toppings);
+      }
+      $(".name").text(name);
+  } else {
+      document.getElementById("pizza-toppings-help").innerHTML = "Please select a maximum of 3!";
+      document.getElementById("pizza-toppings-help").style.cssText = 'color:red !important' //overrides previous color styling
+  }
+}
     } 
     
   }
 
-   function addOrder() {
-     $("#placeorder").prop("disabled", false);
-     $("input[type='checkbox']").prop({
-       disabled: false
-     });
-     $("input[type='checkbox']").prop({
-       checked: false
-     });
-   }
+  function addOrder() {
+    $('#placeorder').prop('disabled', false); //enable button
+    $("input[type='checkbox']").prop({ //enable checkboxes
+        disabled: false
+    });
+    $("input[type='checkbox']").prop({ //uncheck previously checked checkboxes
+        checked: false
+    });
+  }
 });
 
 
