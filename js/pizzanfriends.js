@@ -40,7 +40,7 @@ function placeOrder() { //function for placing an order
       crustCost = 80;
   }
   var checkboxes = $('input[name="toppings"]:checked').length; //get number of checkboxes checked
-  if (checkboxes <= 3) { //limit number of checkboxes allowed to not more than 3
+  if (checkboxes <= 10) { 
       if (size === "Small") {
           var toppingsCost = checkboxes * 70;
       } else if (size === "Medium") {
@@ -55,7 +55,7 @@ function placeOrder() { //function for placing an order
       $("#yourorder").show();
       var price = (sizeCost + crustCost + toppingsCost);
       var totalPrice = parseInt(price * number);
-      $(".salutation").text("Hey" + " " + name + ". Here is your receipt:");
+      $(".salutation").text("Thanks" + " " + name + ". Here is your receipt:");
       $(".pizza-size").append('<tr><td id="pizza-size">' + size);
       $(".number").append('<tr><td id="number">' + number);
       $(".pizza-crust").append('<tr><td id="pizza-crust">' + crust);
@@ -95,7 +95,7 @@ $(document).ready(function() {
 });
 
 function cancelOrders() {
-  location.reload(); //reload contents of page to original status
+  location.reload(); //reload page to original status
 }
 
 var arrayTotal = []; //global array used to store all total prices for each order
