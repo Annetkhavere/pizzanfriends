@@ -7,7 +7,6 @@ function capitalize_inputs(str) { //function to capitalize inputs
 function placeOrder() { //function for placing an order
   //get inputs from form
   var name = capitalize_inputs($("input#name").val());
-  var flavor = $("#pizza-flavor").val();
   var size = $("#pizza-size").val();
   var crust = $("#pizza-crust").val();
   var toppings = [];
@@ -17,44 +16,28 @@ function placeOrder() { //function for placing an order
       });
   var number = $("#pizza-number").val();
   var sizeCost; //set different prices for the different pizza flavors depending on their size
-  if (flavor === "Bbq Beef" || flavor === "Bbq Chicken" || flavor === "Hawaiian" || flavor === "Pulled Pork") {
-      if (size === "Small") {
-          sizeCost = 400;
-      } else if (size === "Medium") {
-          sizeCost = 650;
-      } else if (size === "Large") {
-          sizeCost = 900;
-      }
-  } else if (flavor === "Bbq Pork" || flavor === "Grilled Pork" || flavor === "Margharita" || flavor === "Marinara" || flavor === "Pepperoni") {
-      if (size === "Small") {
-          sizeCost = 450;
-      } else if (size === "Medium") {
-          sizeCost = 700;
-      } else if (size === "Large") {
-          sizeCost = 950;
-      }
-  } else if (flavor === "Chicken Tikka" || flavor === "Gamberi" || flavor === "Mushroom" || flavor === "Oyster" || flavor === "Spicy Veggie" || flavor === "Original Veggie") {
-      if (size === "Small") {
-          sizeCost = 500;
-      } else if (size === "Medium") {
-          sizeCost = 750;
-      } else if (size === "Large") {
-          sizeCost = 1100;
-      }
+  if (size === "Small") {
+      sizeCost = 300;
+  } else if(size === "Medium") {
+      sizeCost = 500;
+  } else if(size === "Large") {
+      sizeCost = 800;
   }
   var crustCost; //set prices for different crust types
   if (crust === "Gluten Free") {
-      crustCost = 230;
-  } else if (crust === "Hand Tossed") {
-      crustCost = 200;
-  } else if (crust === "Original") {
-      crustCost = 150;
-  } else if (crust === "Pan") {
-      crustCost = 180;
-  } else if (crust === "Stuffed") {
       crustCost = 250;
-  } else if (crust === "Thin") {
+  } else if (crust === "Cheese") {
+      crustCost = 250;
+  } else if (crust === "Stuffed") {
+      crustCost = 300;
+  } else if (crust === "Cracker") {
+      crustCost = 200;
+  } else if (crust === "Flat Bread") {
+      crustCost = 180;
+  } else if (crust === "Thick") {
       crustCost = 100;
+  } else if (crust === "Thin") {
+      crustCost = 80;
   }
   var checkboxes = $('input[name="toppings"]:checked').length; //get number of checkboxes checked
   if (checkboxes <= 3) { //limit number of checkboxes allowed to not more than 3
@@ -72,11 +55,10 @@ function placeOrder() { //function for placing an order
       $("#yourorder").show();
       var price = (sizeCost + crustCost + toppingsCost);
       var totalPrice = parseInt(price * number);
-      $(".salutation").text("Hey" + " " + name + ". Here's your order:");
+      $(".salutation").text("Hey" + " " + name + ". Here is your receipt:");
       $(".pizza-size").append('<tr><td id="pizza-size">' + size);
       $(".number").append('<tr><td id="number">' + number);
       $(".pizza-crust").append('<tr><td id="pizza-crust">' + crust);
-      $(".pizza-flavor").append('<tr><td id="pizza-flavor">' + flavor);
       $(".pizzaTotal1").append('<tr><td id="pizzaTotal1">' + totalPrice);
       arrayTotal.push(totalPrice); //create an array for all total prices
       if (toppings == "") {

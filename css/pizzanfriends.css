@@ -70,6 +70,7 @@ hr {
     text-align: center;
     background-color: #EBBC87;
     width: 100%;
+    padding-bottom: 20px;
 }
 .jumbotron{
    /*styling for both jumbotron elements*/
@@ -153,7 +154,7 @@ div.totalPick, div.name, div.location, div.totalDel, div.phone{
     text-align: center;
     color: white;
     font-family: 'Lato', sans-serif;
-    background-image: url("../images/pizza.jpg");
+    background-image: url("../images/sammy-joonhee-VoMQpiMIEsI-unsplash.jpg");
     background-size: cover;
 }
 #contactus img{
