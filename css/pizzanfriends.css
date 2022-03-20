@@ -58,23 +58,18 @@ li a:hover {
     padding-left: 20%;
     text-align: center;
 }
-.carousel-inner{
-    padding-bottom: 1%;
+hr {
+    border: 5px;
+    border-radius: 5px;
+    color: #F8A62A;
 }
-.carousel-multi-item .carousel-indicators li{
-   /*style carousel indicators*/
-    background-color: #F8A62A;
-    height: 1rem;
-    width: 1rem;
-}
-.carousel-multi-item .carousel-indicators .active{
-   /* style active carousel indicator*/
-    background-color: #F8A62A;
-    height: 1.25rem;
-    width: 1.25rem;
+#orders {
+    background-color: white;
 }
 #ordersection{
     text-align: center;
+    background-color: #EBBC87;
+    width: 100%;
 }
 .jumbotron{
    /*styling for both jumbotron elements*/

@@ -45,39 +45,19 @@
             <p>We Believe in Quality. All around. Quality food can't be made without quality initiative.</p>
         </div>
         <br>
-        <hr width="100%" color="#F8A62A" border-color="#F8A62A">
+        <hr width="50%">
         <div id="ordersection">
-            <h3><b>Order here</b></h3>
+            <h3><b>Place your order here</b></h3>
             <div class="row">
                 <div class="col-md-3"></div>
-                <div class="col-md-6">
+                  <div class="col-md-6">
                     <div class="jumbotron">
                         <form id="orders">
                             <div class="form-group">
-                                <label for="name">Your Name:</label>
+                                <label for="name">Enter your Name:</label>
                                 <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
                             </div>
-                            <h5>Kindly pick the following:</h5>
-                            <div class="form-group">
-                                <label for="pizza-flavor">Pizza flavor</label>
-                                <select class="form-control" id="pizza-flavor" required>
-                                    <option>Bbq Beef</option>
-                                    <option>Bbq Chicken</option>
-                                    <option>Bbq Pork</option>
-                                    <option>Chicken Tikka</option>
-                                    <option>Gamberi</option>
-                                    <option>Grilled Pork</option>
-                                    <option>Hawaiian</option>
-                                    <option>Margharita</option>
-                                    <option>Marinara</option>
-                                    <option>Mushroom</option>
-                                    <option>Original Veggie</option>
-                                    <option>Oyster</option>
-                                    <option>Pepperoni</option>
-                                    <option>Pulled Pork</option>
-                                    <option>Spicy Veggie</option>
-                                </select>
-                            </div>
+                            <h5>Choose your order here:</h5>
                             <div class="form-group">
                                 <label for="pizza-size">Pizza size</label>
                                 <select class="form-control" id="pizza-size" required>
@@ -90,61 +70,60 @@
                                 <label for="pizza-crust">Pizza Crust</label>
                                 <select class="form-control" id="pizza-crust" required>
                                     <option>Gluten Free</option>
-                                    <option>Hand Tossed</option>
-                                    <option>Original</option>
-                                    <option>Pan</option>
+                                    <option>Cheese</option>
                                     <option>Stuffed</option>
+                                    <option>Cracker</option>
+                                    <option>Flat Bread</option>
+                                    <option>Thick</option>
                                     <option>Thin</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="pizza-toppings">Extra Toppings</label>
-                                <small id="pizza-toppings-help" class="form-text text-muted">Maximum of 3</small>
-                                <small class="form-text text-muted"><b>S:</b>Ksh.70 <b>M:</b>Ksh.100 <b>L:</b>Ksh.130</small>
+                                <label for="pizza-toppings">Toppings</label>
                                 <div class="row">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-5">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="toppings" value="Bacon" id="bacon">
-                                            <label class="form-check-label" for="bacon">Bacon</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="toppings" value="Cheddar cheese" id="cheddar-cheese">
-                                            <label class="form-check-label" for="cheddar-cheese">Cheddar Cheese</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="toppings" value="Ham" id="ham">
-                                            <label class="form-check-label" for="ham">Ham</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="toppings" value="Mozarella cheese" id="mozarella-cheese">
-                                            <label class="form-check-label" for="mozarella-cheese">Mozarella Cheese</label>
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni" id="pepperoni">
+                                            <label class="form-check-label" for="pepperoni">Pepperoni</label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="toppings" value="Mushrooms" id="mushrooms">
-                                            <label class="form-check-label" for="mushrooms">Mushroom</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="toppings" value="Olives" id="olives">
-                                            <label class="form-check-label" for="olives">Olives</label>
+                                            <label class="form-check-label" for="mushrooms">Mushrooms</label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="toppings" value="Onions" id="onions">
                                             <label class="form-check-label" for="onions">Onions</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="toppings" value="Parmesan cheese" id="parmesan-cheese">
-                                            <label class="form-check-label" for="parmesan-cheese">Parmesan Cheese</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni" id="pepperoni">
-                                            <label class="form-check-label" for="pepperoni">Pepperoni</label>
-                                        </div>
-                                        <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="toppings" value="Sausage" id="sausage">
                                             <label class="form-check-label" for="sausage">Sausage</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Bacon" id="bacon">
+                                            <label class="form-check-label" for="bacon">Bacon</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Extra cheese" id="extra-cheese">
+                                            <label class="form-check-label" for="extra-cheese">Extra cheese</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Black olives" id="black-olives">
+                                            <label class="form-check-label" for="black-olives">Black olives</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Green peppers" id="green-peppers">
+                                            <label class="form-check-label" for="green-peppers">Green peppers</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Pineapple" id="pineapple">
+                                            <label class="form-check-label" for="pineapple">Pineapple</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="toppings" value="Spinach" id="spinach">
+                                            <label class="form-check-label" for="spinach">Spinach</label>
                                         </div>
                                     </div>
                                     <div class="col-md-1"></div>
