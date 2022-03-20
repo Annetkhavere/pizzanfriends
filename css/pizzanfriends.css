@@ -14,15 +14,9 @@
     text-align: center;
     color: white;
 }
-#header p{
-    font-family: 'Zhi Mang Xing', cursive;
-    margin: 0;
-    font-size: 30px;
-    color: #FE5A07;
-}
 .nav-items {
     float: right;
-    margin: 0;
+    margin-left: 35%;
     font-size: 18px;
 }
 #header .navbar{
@@ -38,7 +32,7 @@ li a{
     color: white;
 }
 li a:hover {
-    color: #FE5A07;
+    color: #F8A62A;
 }
 .content{
     text-align: center;
@@ -68,13 +62,13 @@ li a:hover {
 }
 .carousel-multi-item .carousel-indicators li{
    /*style carousel indicators*/
-    background-color: #FE5A07;
+    background-color: #F8A62A;
     height: 1rem;
     width: 1rem;
 }
 .carousel-multi-item .carousel-indicators .active{
    /* style active carousel indicator*/
-    background-color: #FE5A07;
+    background-color: #F8A62A;
     height: 1.25rem;
     width: 1.25rem;
 }
@@ -107,7 +101,7 @@ select{
 }
 h5 {
    /*styling for all h5 elements*/
-    color: #FE5A07 
+    color: #F8A62A 
 }
 .col-md-5{
    /*align content in all col-md-5*/
@@ -122,7 +116,7 @@ h5 {
 .btn {
    /* style all buttons */
     color: #fff;
-    background-color: #FE5A07 !important;
+    background-color: #F8A62A !important;
     border-radius: 9px;
     padding: 9px;
 }
