@@ -2,6 +2,8 @@ $(document).ready(function() {
   $("#ordering").submit(function(event) {
       event.preventDefault();
       placeOrder();
+ $("#addorder").submit(function(event) {
+      event.preventDefault();
       addOrder();
   });
 
@@ -62,7 +64,7 @@ $(document).ready(function() {
 
    function addOrder() {
      $("#placeorder").prop("disabled", false);
-     $("input[type='chackbox']").prop({
+     $("input[type='checkbox']").prop({
        disabled: false
      });
      $("input[type='checkbox']").prop({
@@ -145,5 +147,4 @@ $(document).ready(function() {
 //   }
 
 // }
-
-// });
+//});
