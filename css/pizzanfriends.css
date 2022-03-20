@@ -48,13 +48,14 @@ li a:hover {
 #header h4{
     color: #F8A62A;
     font-size: 19px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster', sans-serif;
 }
 .color {
-    background-color: white;
+    background-color: black;
     padding: 5px;
 }
 #aboutus{
+    color: black;
     padding-right: 20%;
     padding-left: 20%;
     text-align: center;
@@ -65,11 +66,11 @@ hr {
     color: #F8A62A;
 }
 #orders {
-    background-color: white;
+    background-color: #F8A62A;
 }
 #ordersection{
     text-align: center;
-    background-color: #EBBC87;
+    background-color: black;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -81,7 +82,7 @@ form{
     padding-left: 13%;
     padding-right: 13%;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster', sans-serif;
 }
 .form-control{
    /*change color of inputs*/
@@ -154,7 +155,7 @@ div.totalPick, div.name, div.location, div.totalDel, div.phone{
     height: auto;
     text-align: center;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster', sans-serif;
     background-image: url("../images/sammy-joonhee-VoMQpiMIEsI-unsplash.jpg");
     background-size: cover;
 }
@@ -176,5 +177,9 @@ h3{
 #message{
     color: white;
     background: transparent;
+}
+.ownership {
+    text-align: center;
+    padding: 10px;
 }
 
