@@ -2,7 +2,7 @@
     padding: 0;
 }
 #header{
-    background-image: url("../images/pizza1.jpg");
+    background-image: url("../images/georgia.jpg");
    /* Image is centered vertically and horizontally at all times */
     background-position: center center;
    /* Image doesn't repeat */
@@ -39,13 +39,19 @@ li a:hover {
     padding: 18%;
 }
 #header h1{
+    color: #F8A62A;
     font-size: 120px;
     letter-spacing: 1px;
     font-family: 'Zhi Mang Xing', cursive;
 }
 #header h4{
+    color: #F8A62A;
     font-size: 19px;
     font-family: 'Lato', sans-serif;
+}
+.color {
+    background-color: white;
+    padding: 5px;
 }
 #aboutus{
     padding-right: 20%;
