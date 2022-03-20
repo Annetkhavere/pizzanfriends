@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("#ordering").submit(function(event) {
       event.preventDefault();
       placeOrder();
+      addOrder();
   });
 
   function placeOrder() { //function for placing an order
@@ -58,6 +59,16 @@ $(document).ready(function() {
     } 
     
   }
+
+   function addOrder() {
+     $("#placeorder").prop("disabled", false);
+     $("input[type='chackbox']").prop({
+       disabled: false
+     });
+     $("input[type='checkbox']").prop({
+       checked: false
+     });
+   }
 });
 
 
